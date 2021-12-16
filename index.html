@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-color: hsl(217, 54%, 11%);
+      font-family: Outfit;
+      font-size: 18px;
+     
+    }
+    .attribution{
+        display: flex;
+        min-height: 34rem;
+        /* border: 2px solid black; */
+        max-width:20.3rem;
+        margin: auto ;
+        background-color: hsl(216, 50%, 16%);
+        transform: translateY(3rem);
+        padding: .2rem;
+        border-radius: 7px;
+        position: relative;
+        box-shadow: 2px 2px 2px black;
+        overflow: hidden;
+        flex-wrap: wrap;
+      }
+      .img{
+
+        /* border: 2px solid red; */
+        
+        background:url("../images/c0d6e8e4-e1d4-4bde-9428-61af9898d49b.jpg") ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 8.5rem;
+        min-width: 90%;
+        transform: translate(1rem,.9rem);
+        border-radius: 8px;
+      }
+      #h{
+      position: absolute;
+      right: 6rem;
+      color: #f8f8f8;
+       transform: translate(.6rem,18.5rem);
+      }
+      #p1{
+        padding: 2.9rem 0;
+      font-weight: 600;
+        position:absolute;
+        right: 0rem;
+        color: rgba(136, 177, 177, 0.849);
+        transform: translate(1.1rem,19.6rem);
+        word-wrap: break-word;
+      }
+      img{
+        max-height: .9rem;
+        margin-right: .3rem;
+      }
+      #p2{
+        font-size: initial;
+        transform: translate(0.1rem, 27.5rem);
+        position: absolute;
+        right: 13.6rem;
+        font-weight: 600;
+        color: cyan;
+        word-spacing: 2px;
+      }
+      span{
+        transform: translate(0.1rem, 27.5rem);
+        position: absolute;
+        left: 13.6rem;
+        font-weight: 500;
+        font-size: initial;
+        height: .2rem;
+        color: rgba(136, 177, 177, 0.849);
+      }
+      .hr{
+        transform: translate(1rem, 13.6rem);
+        border-top: .1rem solid rgba(255, 255, 255, 0.555);
+        max-height: 1rem;
+        width: 89%;
+      }
+      #i{
+        margin: 0;
+        border: none;
+        padding: 0;
+        height: 14rem;
+       
+      }
+      #foot{
+        transform: translate(1rem, 6.2rem);
+        color: rgba(136, 177, 177, 0.849);
+        font-size: initial;
+        
+      }
+      #i2{
+        transform: translate(.3rem,.5rem);
+        min-height: 2rem;
+        border: .1rem solid whitesmoke;
+        border-radius: 50%;
+        margin-right: .4rem;
+      }
+      #s1{
+        display: inline;
+        max-width: 5rem;
+        transform: translate(0.4rem,1.2rem);
+        position: absolute;
+        color: whitesmoke;
+        font-weight: bold;
+        
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Equilibrium #3429
+
+  Our Equilibrium collection promotes balance and calm.
+
+  0.041 ETH
+  3 days left
+  
+  Creation of Jules Wyvern -->
+
+  <div class="attribution">
+    <div class="img m"></div><br>
+    
+    <h2 id="h">Equilibrium #3429</h2>
+    <p id="p1">Our Equilibrium collection promotes balance and calm.
+    </p>
+    <p id="p2"><img src="images/icon-ethereum.svg" alt="" >0.041 ETH</p><span> <img src="images/icon-clock.svg" alt="" id="i"> 3 days left</span>
+    <div class="hr"></div>
+    <div id="foot">
+      <img src="images/image-avatar.png" alt="" id="i2">
+      Creation of <p id="s1">Jules&nbsp;Wyvern</p> 
+    </div>
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohit Singh</a>. -->
+  </div>
+</body>
+</html>
